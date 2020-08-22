@@ -109,6 +109,10 @@ aside {
    display: none;
 }
 
+.menu-mobile {
+   display: none;
+}
+
 * {
    box-sizing: border-box;
 }
@@ -123,6 +127,10 @@ aside {
 
 @media screen and (max-width: 600px) {
    nav ul {
-      display: grid;
+      display: none;
+   }
+
+   .menu-mobile {
+      display: block;
    }
 }
