@@ -1,0 +1,19 @@
+{
+  "name": "last_submission_bdpw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ariska138/last_submission_bdpw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ariska138/last_submission_bdpw/issues"
+  },
+  "homepage": "https://github.com/Ariska138/last_submission_bdpw#readme"
+}
