@@ -1,13 +1,6 @@
-.jumbotron {
-   font-size: 20px;
-   padding: 60px;
-   background-color: #5CA0ED;
-   text-align: center;
-   color: white;
-}
-
 body {
-   font-family: 'Quicksand', sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #080C26;
    margin: 0;
    padding: 0;
 }
@@ -21,9 +14,14 @@ main {
 }
 
 nav {
-   background-color: #006DB5;
+   background-color: #0A3873;
    position: sticky;
    top: 0;
+}
+
+.menu-mobile {
+   background-color: #0A3873; 
+   height: 50px;
 }
 
 nav ul{
@@ -48,18 +46,11 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #111111;
+   background-color: #F2DEA2;
+   color: #080C26;
 }
 
 
-
-/* Body */
-
-body {
-   font-family: Arial, Helvetica, sans-serif;
-    background-color: #DDF2FF;
- }
-  
  h2 {
     color: #DCA11D;
  }
@@ -69,9 +60,9 @@ body {
  }
   
  footer {
-    padding: 20px;
+    padding: 5px;
     color: white;
-    background-color: #006DB5;
+    background-color: #0A3873;
  }
 
  .footer-child {

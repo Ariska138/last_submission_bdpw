@@ -15,3 +15,9 @@ function navMenuMobile() {
 
     isShowMenu = !isShowMenu;
 }
+
+function reportWindowSize() {
+    location.reload();
+  }
+  
+  window.onresize = reportWindowSize;
