@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,103 @@
     <title>Ariska Hidayat</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <div style="padding: 0px; margin: 0px;">
+        <div class="parent-overlay">
             <img src="assets/background.jpg" width="100%">
+            <div class="child-overlay">
+                <h1>Biodata Pribadi</h1>
+            </div>
         </div>
-        <nav>
+        <nav id='navbar'>
             <div class="menu-mobile">
                 <a href="javascript:void(0);" style="float: right;" onclick="navMenuMobile()">
                     <i class="fa fa-bars" id="icon-menu"></i>
                 </a>
-               </div>
+            </div>
             <ul id='menu'>
                 <li>
-                    <a href="#story">Cerita Singkat</a>
+                    <a href="#info">Info Singkat</a>
                 </li>
                 <li>
-                    <a href="#tour">Wisata</a>
+                    <a href="#tour">Wisata Favorit</a>
                 </li>
                 <li>
-                    <a href="#food">Makanan</a>
+                    <a href="#food">Makanan Favorit</a>
                 </li>
                 <li>
-                    <a href="#culture">Budaya</a>
+                    <a href="#drink">Minuman Favorit</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <div id='content'>
-            <article>
-                <h2>Cerita Singkat</h2>
-                <img class="logo" src="./assets/Logo_Kota_Surakarta_(Solo).png" alt="" width='50px'>
-                <p>"Sala" adalah satu dari tiga dusun yang dipilih oleh Sunan Pakubuwana II atas saran dari Tumenggung Hanggawangsa, Tumenggung Mangkuyudha, serta komandan pasukan Belanda, J.A.B. van Hohendorff, ketika akan mendirikan istana baru, setelah perang suksesi Mataram terjadi di Kartasura.</p>
-                <p>Pada masa sekarang, nama Surakarta digunakan dalam situasi formal-pemerintahan, sedangkan nama Sala/Solo lebih merujuk kepada penyebutan umum yang dilatarbelakangi oleh aspek kultural. Kata sura dalam Bahasa Jawa berarti "keberanian" dan karta berarti "makmur"; dengan harapan bahwa Surakarta menjadi tempat dimana penghuninya adalah orang-orang yang selalu berani berjuang untuk kebaikan serta kemakmuran negara dan bangsa.</p>
+            <article id='info'>
+                <h2>Info Singkat</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Nama Panggilan</td>
+                            <td>: Ariska</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir</td>
+                            <td>: Sragen</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>: 25 Maret 1991</td>
+                        </tr>
+                        <tr>
+                            <td>Hobi</td>
+                            <td>: Bersepeda</td>
+                        </tr>
+                    </table>
+                </div>
             </article>
-            <article>
-                <h2>Makanan</h2>
+            <article id='tour'>
+                <h2>Wisata Favorit</h2>
+                <div class="flex-container">
+                    <div>
+                        <img src="./assets/250px-Balaikota_Solo_by_Bennylin_04.jpg" alt="Balaikota">
+                    </div>
+                    <div>
+                        <img src="./assets/Great_Mosque_of_Solo.jpg" alt="Masjid Agung">
+                    </div>
+                    <div>
+                        <img src="./assets/250px-Abdi_Dalem_Keraton_Surakarta.jpg" alt="Abdi Dalem">
+                    </div>
+                </div>
             </article>
-            <article>
-                <h2>Budaya</h2>
+            <article id='food'>
+                <h2>Makanan Favorit</h2>
+                <div class="flex-container">
+                    <div>
+                        <img src="./assets/250px-Balaikota_Solo_by_Bennylin_04.jpg" alt="Balaikota">
+                    </div>
+                    <div>
+                        <img src="./assets/Great_Mosque_of_Solo.jpg" alt="Masjid Agung">
+                    </div>
+                    <div>
+                        <img src="./assets/250px-Abdi_Dalem_Keraton_Surakarta.jpg" alt="Abdi Dalem">
+                    </div>
+                </div>
+            </article>
+            <article id='drink'>
+                <h2>Minuman Favorit</h2>
+                <div class="flex-container">
+                    <div>
+                        <img src="./assets/250px-Balaikota_Solo_by_Bennylin_04.jpg" alt="Balaikota">
+                    </div>
+                    <div>
+                        <img src="./assets/Great_Mosque_of_Solo.jpg" alt="Masjid Agung">
+                    </div>
+                    <div>
+                        <img src="./assets/250px-Abdi_Dalem_Keraton_Surakarta.jpg" alt="Abdi Dalem">
+                    </div>
+                </div>
             </article>
         </div>
         <aside>
@@ -55,11 +113,14 @@
                     <h2>Profil</h2>
                 </header>
                 <figure>
-                    <img src="assets/ariska.png" width="100%">
+                    <img src="assets/ariska.png">
                     <figcaption>Ariska Hidayat</figcaption>
-                </figure>       
+                </figure>
+                <div>
+
+                </div>
             </article>
-            
+
         </aside>
     </main>
     <footer>
@@ -69,4 +130,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

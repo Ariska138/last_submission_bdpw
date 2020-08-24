@@ -1,127 +1,168 @@
 body {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: #080C26;
-   margin: 0;
-   padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080C26;
+    margin: 0;
+    padding: 0;
 }
 
-
 main {
-   max-width: 1280px;
-   overflow: auto;
-   margin: auto;
-   clear: right;
+    max-width: 1280px;
+    overflow: auto;
+    margin: auto;
+    clear: right;
 }
 
 nav {
-   background-color: #0A3873;
-   position: sticky;
-   top: 0;
+    background-color: #0A3873;
+    position: sticky;
+    top: 0;
 }
 
 .menu-mobile {
-   background-color: #0A3873; 
-   height: 50px;
+    background-color: #0A3873;
+    height: 50px;
 }
 
-nav ul{
-   overflow: hidden;
-   max-width: 1280px;
-   margin: auto;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
+nav ul {
+    overflow: hidden;
+    max-width: 1280px;
+    margin: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-   float: left;
+    float: left;
 }
 
 nav a {
-   display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
 
 nav a:hover {
-   background-color: #F2DEA2;
-   color: #080C26;
+    background-color: #F2DEA2;
+    color: #080C26;
 }
 
+h2 {
+    color: #DCA11D;
+}
 
- h2 {
+h3 {
     color: #DCA11D;
- }
-  
- h3 {
-    color: #DCA11D;
- }
-  
- footer {
+}
+
+footer {
     padding: 5px;
     color: white;
     background-color: #0A3873;
- }
+}
 
- .footer-child {
-   max-width: 1280px;
-   margin: auto;
- }
+.footer-child {
+    max-width: 1280px;
+    margin: auto;
+}
 
-
- article {
-   border: 1px solid gray;
-   padding: 10px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 10px  gray;
-   margin: 20px 10px;
-   background-color: #FFF;
+article {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    margin: 20px 10px;
+    background-color: #FFF;
 }
 
 img.logo {
-   float: left;
-   margin: 10px;
+    float: left;
+    margin: 10px;
 }
 
 #content {
-   float: left;
-   width: 75%;
-   
+    float: left;
+    width: 75%;
 }
 
 aside {
-   float: right;
-   width: 25%;
+    float: right;
+    width: 25%;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+figure figcaption {
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 700;
 }
 
 .hidden {
-   display: none;
+    display: none;
 }
 
 .menu-mobile {
-   display: none;
+    display: none;
 }
 
 * {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 1000px) {
-   #content,
-   aside {
-       width: 100%;
-       padding: 0;
-   }
+@media screen and (max-width: 768px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 600px) {
-   nav ul {
-      display: none;
-   }
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+}
 
-   .menu-mobile {
-      display: block;
-   }
+.parent-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.child-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container img {
+    height: 150px;
+    border-radius: 10px;
+    margin: 16px;
+}
+
+#info table {
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

@@ -18,6 +18,19 @@ function navMenuMobile() {
 
 function reportWindowSize() {
     location.reload();
-  }
-  
-  window.onresize = reportWindowSize;
+}
+
+window.onresize = reportWindowSize;
+
+window.onscroll = function() { myFunction() };
+
+var navbar = document.getElementById("navbar");
+var posStickyActive = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= posStickyActive) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
